@@ -1,0 +1,202 @@
+/* help */
+#helpID {
+    margin: 2% 5% 0 5%;
+}
+.help {
+    color: #000000;
+    text-align: left;
+    font-family: "Inter-SemiBold", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+/* quick assits */
+.frame-15 {
+    margin: 2% 5% 0 5%;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.quick-assits {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  padding-top: 9px;
+  
+}
+.line-10 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 1290px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 61px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+
+/* box-return */
+.container .box-return {
+    line-height: 50px;
+}
+.box-return {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.return {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.where-is-my-refund {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.how-do-i-return-my-order {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* box-order */
+.container .box-order {
+    margin-bottom: 5%;
+    line-height: 50px;
+}
+.box-order {
+  height: 304px;
+  position: relative;
+  overflow: hidden;
+}
+.order {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.can-i-change-my-order-or-cancel-it {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.where-is-my-order {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.how-to-track-my-order {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+
+/* contact us */
+.frame-17 {
+    margin: 0% 5% 0 5%;  
+  height: 73px;
+  position: relative;
+  overflow: hidden;
+}
+.contact-uss {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+.line-9 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 1290px;
+  height: 0px;
+  padding-top: 18px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+
+/* box-contact */ 
+.container .box-contact {
+    margin-bottom: 5%;
+    line-height: 50px;
+}
+.box-contact {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.eiei-co-th-123-aaa-bbb-thailand {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+._99-1212-1212 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.send-an-email {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/* box-map */
+.container .box-map {
+    margin-bottom: 10%;
+    margin-top: 2%;
+}
+.box-map {
+  height: 222px;
+  position: relative;
+  overflow: auto;
+
+}
+#map {
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    left: 0;
+    top: 0; 
+    object-fit: cover; 
+  }
+
+/*== send email ==*/
+.box-email {
+  margin: 0 5% 5% 5%;
+}

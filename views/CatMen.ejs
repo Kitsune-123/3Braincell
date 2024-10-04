@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <a href="../public/css/Category.css"></a>
+    <title>Men</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="filter-section">
+        <form class="check" action="/" method="POST">
+          <input type="checkbox" id="black" name="black" value="color">
+          <label for="black"> Black</label><br>
+          <input type="checkbox" id="white" name="white" value="color">
+          <label for="white"> White</label><br>
+          <input type="checkbox" id="red" name="red" value="red">
+          <label for="red"> Red</label>
+          <input type="checkbox" id="purple" name="purple" value="color">
+          <label for="purple"> Purplr</label><br>
+          <input type="checkbox" id="blue" name="blue" value="color">
+          <label for="blue"> Blue</label><br>
+          <input type="checkbox" id="green" name="green" value="color">
+          <label for="green"> Green</label>
+        </form>
+          <h2>Filters</h2>
+          <!-- Add your filter options (e.g., checkboxes, dropdowns) -->
+      </div>
+      <div class="product-section">
+          <!-- Product list will go here -->
+          <h2>Products</h2>
+          <div class="product-container">
+              <!-- Loop through your product data and display each product -->
+              <% products.forEach(product => { %>
+                  <div class="product">
+                      <h3><%= product.name %></h3>
+                      <!-- Display other product information like price, image, etc. -->
+                  </div>
+              <% }); %>
+          </div>
+      </div>
+      <nav aria-label="navigation-section">
+        <ul class="pagination justify-content-center">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              </a>
+          </li>
+        </ul>
+      </nav>
+  </div>
+    <!-- <%- include('partials/header') %>
+    <div class="container">
+      <div class="slide-new-arrivals">
+        <div class="product" >
+          <%- include('partials/products') %>
+          <%- include('partials/products') %>
+          <%- include('partials/products') %>
+          <%- include('partials/products') %>
+          <%- include('partials/products') %>
+          <%- include('partials/products') %>
+        </div>
+
+        <nav aria-label="navigation">
+          <ul class="pagination justify-content-center">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container_filter">
+        <div class="filter">Filter</div>
+        <div class="line"></div>
+        <div class="filter-color">
+          <div class="black-5">
+            <span>
+              <span class="black-5-span">Black</span>
+              <span class="black-5-span2">(5)</span>
+            </span>
+          </div>
+          <div class="white-10">
+            <span>
+              <span class="white-10-span">White</span>
+              <span class="white-10-span2">(10)</span>
+            </span>
+          </div>
+          <div class="purple-2">
+            <span>
+              <span class="purple-2-span">purple</span>
+              <span class="purple-2-span2">(2)</span>
+            </span>
+          </div>
+          <div class="blue-5">
+            <span>
+              <span class="blue-5-span">blue</span>
+              <span class="blue-5-span2">(5)</span>
+            </span>
+          </div>
+          <div class="yellow-1">
+            <span>
+              <span class="yellow-1-span">yellow</span>
+              <span class="yellow-1-span2">(1)</span>
+            </span>
+          </div>
+          <div class="red-0">
+            <span>
+              <span class="red-0-span">red</span>
+              <span class="red-0-span2">(0)</span>
+            </span>
+          </div>
+          <div class="green-3">
+            <span>
+              <span class="green-3-span">green</span>
+              <span class="green-3-span2">(3)</span>
+            </span>
+          </div>
+          <div class="chech-box4">
+            <div class="rectangle-183"></div>
+          </div>
+          <div class="chech-box5">
+            <div class="rectangle-183"></div>
+          </div>
+          <div class="chech-box6">
+            <div class="rectangle-183"></div>
+          </div>
+          <div class="chech-box7">
+            <div class="rectangle-183"></div>
+          </div>
+          <div class="chech-box8">
+            <div class="rectangle-183"></div>
+          </div>
+          <div class="chech-box9">
+            <div class="rectangle-183"></div>
+          </div>
+          <div class="chech-box10">
+            <div class="rectangle-183"></div>
+          </div>
+        </div>
+        <div class="color">Color</div>
+        <div class="line-6"></div>
+      </div>
+    </div>
+  -->
+    <footer>
+      <%- include('partials/footer') %>
+    </footer> 
+  </body>
+</html>

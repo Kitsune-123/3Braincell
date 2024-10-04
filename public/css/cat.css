@@ -1,0 +1,102 @@
+/* Styles for desktop */
+.scrollable-list {
+    height: 200px; /* Set the initial height of the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    background: #e8e8e8;
+    border-radius: 10px; /* Add border-radius to create smooth curve edges */
+    padding: 10px; /* Optional: Add padding for better spacing */
+    margin-top: 10px; /* Optional: Add margin for spacing */
+    width: 100%;
+}
+
+/* Optional: Style for table */
+.scrollable-list table {
+    width: 100%; /* Make the table fill the container width */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+/* Optional: Style for table cells */
+.scrollable-list td {
+    border: 1px solid #eee; /* Add a border between table cells */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.tf {
+    text-align: left;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bood {
+    width:100%;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .scrollable-list {
+        height: auto; /* Set height to auto for flexible height */
+        overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport */
+        margin-top: 5px; /* Adjust margin for spacing */
+        padding: 5px; /* Adjust padding for spacing */
+        border-radius: 0; /* Remove border-radius for square edges */
+    }
+
+    /* Optional: Adjust font size for smaller screens */
+    .tf {
+        font-size: 14px;
+    }
+
+    /* Optional: Adjust font size for smaller screens */
+    .scrollable-list td {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+.tsk{
+    background: #e4d2b2;
+    border-color: #ffffff;
+    border-radius: 15px;
+    width: 58px;
+    height: 22px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #373539;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bleh{
+    background: #782700;
+    border-radius: 5px;
+    width: 174px;
+    height: 38px;
+    color: #ffffff;
+    overflow: hidden;
+    margin-left: 1300px;
+}
+
+@media (max-width: 767px) {
+    .bleh {
+      width: 100%; /* Set width to 100% for mobile devices */
+      margin-left: 0; /* Remove left margin */
+      margin-right: 0; /* Remove right margin */
+    }
+  }
+
+  .Bruhtext{
+    color: #000000;
+    font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  }

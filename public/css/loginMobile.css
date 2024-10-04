@@ -1,0 +1,44 @@
+.login-box {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.offcanvas-header {
+    margin-bottom: 5%;
+}
+.offcanvas-header h1 {
+    text-align: center;
+}
+.btn-login {
+    margin-top: 5% !important;
+}
+.box-login {
+    margin-top: 5%;
+}
+.modal-body button {
+    margin: 5% 0;
+    width: 100%;
+    background-color: #000;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.modal-body .signup-section {
+    text-align: center;
+}
+.offcanvas-header {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter-SemiBold", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+#offcanvasRightLabel h1 {
+    text-align: center;
+}

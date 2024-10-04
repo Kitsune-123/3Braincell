@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basket</title>
+    <link rel="stylesheet" href="../css/basket.css">
+</head>
+<body>
+    <header>
+        <%- include('partials/header')%>
+    </header>
+
+    <div class="row">
+        <!--===shopping cards=== -->
+        <div class="col-lg-8 col-md-12 col-sm-12">
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Shopping Bag
+        </div>
+
+        <%- include('products/shopping-bag')%>
+        
+    </div>
+        </div>
+        <!--===order sum=== -->
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="order-box">
+                <div class="order-summary">order summary</div>
+                <div>
+                    <div class="_2-item">2 Item</div>
+                    <div class="_1000-00">$1000.00</div>
+                </div>
+                <div>
+                    <div class="delivery">Delivery</div>
+                    <div class="free">free</div>
+                </div>
+                <div>
+                    <div class="total">total</div>
+                    <div class="_1000-002">$1000.00</div>
+                    <div class="vat-7-included">VAT (7% Included)</div>
+                </div>
+                <div>
+                    <button class="rectangle-49" onclick="openPopup()">
+                        <div class="checkout2">Checkout</div>
+                    </button>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <img src="/img/icon/404-tick.png">
+        <h2>Thank You</h2>
+        <p>Checkout success</p>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+
+    <footer>
+        <%- include('partials/footer');%>
+    </footer>
+    
+    <script>
+$('.minus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+
+    if (value > 1) {
+        value = value - 1;
+    } else {
+        value = 0;
+    }
+
+    $input.val(value);
+
+});
+
+$('.plus-btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+
+    if (value < 100) {
+        value = value + 1;
+    } else {
+        value = 100;
+    }
+
+    $input.val(value);
+});
+
+
+    let popup = document.getElementById("popup");
+    function openPopup() {
+        popup.classList.add("open-popup");
+    }
+    function closePopup() {
+        popup.classList.remove("open-popup");
+    }
+    </script>
+</body>
+</html>

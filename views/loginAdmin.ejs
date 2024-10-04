@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <div class="center-img"><img src="/img/logo.png" class="Logo"></div>
+    <div class="box-above-bg">
+        <div class="Container">
+            <h1 class="Login-text"><a href="../sale"><u>Login</u></a></h1>
+            <h1 class="Regis"><a href="../register"><u>Register</u></a></h1>
+        </div>
+        <br>
+        <div class="box-in-box">
+            <!--Input box for User Name-->
+            <form action="/" method="post">
+                <div class="input-box">
+                    <div class="email-input "><i class="icolor">Email</i>*</div>
+                    <input class="INP" type="text" placeholder="Email" required>
+                </div>
+                <br>
+                <div class="input-box">
+                    <div class="password"><i class="icolor">Password</i>*</div>
+                    <input class="INP" type="text" placeholder="Password" required>
+                </div>
+            </form>
+        </div>
+    <button class="btn btn-primary" id="Regisbtn" type="button"> Log in </button>
+
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+    // Get a reference to the button element
+    const Regisbtn = document.getElementById('Regisbtn');
+
+    Regisbtn.addEventListener('click', () => {
+        window.location.href = '../index';
+    });
+</script>
+
+</html>

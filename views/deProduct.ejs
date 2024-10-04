@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/deProduct" />
+  <title>Delete product</title>
+  <style>
+    .btn {
+      margin: 5%;
+    }
+
+    #description {
+      width: 60vh;
+      height: 60vh;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <%- include('partials/sidebar') %>
+
+    <div id="content-wrapper" class="d-flex flex-column" style="margin-left: 20%">
+      <!-- Main Content -->
+      <div id="content">
+        <%- include('partials/topbar') %>
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+              <h1 class="h3 mb-0 text-gray-800" style="font-weight: 600;">Add Product</h1>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Discard
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Discard this change?</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        It will be don't save your change
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</button>
+                        <button type="button" class="btn btn-primary" >Discard</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- save       -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Save
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Save this change?</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Are you sure to save this file?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Row -->
+
+            <div class="row">
+              <!-- group1 -->
+
+              <div class=" col-lg-6">
+                <div class="col-lg-6">
+                  <div class="mb-4">
+                    <label for="formGroupExampleInput" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" placeholder="Shirt, Shorts, etc." />
+
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label for="formGroupExampleInput2" class="form-label">Description</label>
+                  <input type="text" class="form-control" id="description" />
+
+                </div>
+                <div class="mb-4">
+                  <form action="/" method="post">
+                    <div class="input-group">
+                      <input type="file" class="form-control" id="inputGroupFile04"
+                        aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                  </form>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- grop-info -->
+
+            <div class="col-lg-6">
+              <div class="col-lg-6">
+                <div class="mb-12">
+                  <label for="Product_cateory" class="form-label">Product Category</label>
+                  <div class="input-group">
+                    <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                      <option value="1">Men</option>
+                      <option value="2">Women</option>
+                      <option value="3">Kids</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-12">
+                  <label for="Product_type" class="form-label">Product Type</label>
+                  <div class="input-group">
+                    <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                      <option value="1">Shirt</option>
+                      <option value="2">Shorts</option>
+                      <option value="3">Shoes</option>
+                      <option value="4">Clothing</option>
+                      <option value="5">Accessory</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Delete </button>
+
+      </div>
+      <!-- end row content -->
+    </div>
+    <!-- /.container-fluid -->
+    </div>
+    <!-- End of Main Content -->
+    </div>
+
+    <!-- end container -->
+</body>
+
+</html>

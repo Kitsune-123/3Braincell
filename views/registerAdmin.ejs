@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/registering.css"> 
+</head>
+
+<body>
+   <div class="center-img"><img src="img/logo.png" class="Logo"></div>
+    <div class="box-above-bg">
+        <div class="Container"> 
+            <h1 class="Login-text"><a href="../login"><u>Login</u></a></h1>
+            <h1 class="Regis"><a href="../register"><u>Register</u></a></h1>
+           </div> 
+
+    <div class="box-in-box">
+   <!--Input box for Frist Name-->
+    <div>
+        <form action="/" method="post">
+            <div class="input-box">
+                <div class="input-field">
+                    <div class="Name"><i class ="icolor">Frist Name</i>*</div>
+                    <input class ="INP" type="text" placeholder="Frist Name" required>
+                </div>
+            </div>
+        
+    </div>
+
+    <!--Input box for Last Name-->
+    <div>
+            <div class="input-box">
+                <div class="input-field">
+                    <div class="Name"><i class ="icolor">Last Name</i>*</div>
+                    <input class="INP" type="text" placeholder="Last Name" required>
+                </div>
+            </div>
+    </div>
+
+
+    <!--Input box for Email-->
+    <div>
+            <div class="input-box">
+                <div class="input-field">
+                    <div class="Name"><i class ="icolor">Email</i>*</div>
+                    <input class="INP" type="text" placeholder="Email" required>
+                </div>
+            </div>
+    </div>
+
+    <!--Input box for Password-->
+    <div>
+            <div class="input-box">
+                <div class="input-field">
+                    <div class="Name"><i class ="icolor">Password</i>*</div>
+                    <input class="INP" type="text" placeholder="Password" required>
+                </div>
+            </div>
+    </div>
+
+      <!--Input box for Confirm Password-->
+      <div>
+            <div class="input-box">
+                <div class="input-field">
+                    <div class="Name"><i class ="icolor">Confirm Password</i>*</div>
+                    <input class="INP" type="text" placeholder="Confirm Password" required>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+    <div class="checkloc">
+        <form action="">
+            <div class="check-field">
+                <input class="check-boxes" type="checkbox" id="Term" required>
+                <label for="Term">Would you like to accept <u>term and condition?</u></label>
+            </div>
+        </form>
+    </div>
+
+    <button id="Regisbtn" type="button" >Register</button>
+
+    </div>
+</div>
+<script>
+    
+    document.getElementById("Regisbtn").addEventListener("click", function() {
+        window.location.href = "../login"; // Redirect to login.ejs
+    });
+    // document.getElementById("Login-text").addEventListener("click", function() {
+    //     window.location.href = "/login"; // Redirect to login.ejs
+    // });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiZqRMAKwmSPxqUTDDfiFIcD2O4mMBbzQ"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <%- include('partials/header')%>
+    </header>
+    <!-- help -->
+    <section id="helpID">
+        <div class="container-fluid">
+            <div class="help">HELP</div>
+        </div>
+    </section>
+
+    <!-- quick assits -->
+    <div class="container-fluid">
+        <div class="frame-15">
+            <div class="quick-assits">Quick Assits</div>
+            <div class="line-10"></div>
+          </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="container">
+                <div class="box-return" style="margin-left: 20%;">
+                    <div class="return">Return</div>
+                    <div class="where-is-my-refund">Where is my refund?</div>
+                    <div class="how-do-i-return-my-order">How do I return my order?</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="container">
+                <div class="box-order" style="margin-left: 20%;">
+                    <div class="order">Order</div>
+                    <div class="can-i-change-my-order-or-cancel-it">
+                        Can I change my order or Cancel it?
+                    </div>
+                    <div class="where-is-my-order">Where is my order?</div>
+                    <div class="how-to-track-my-order">How to track my order?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- contact us -->
+    <div class="container-fluid">
+        <div class="frame-17">
+            <div class="contact-uss">Contact Us</div>
+            <div class="line-9"></div>
+          </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="container">
+                <div class="box-contact" style="margin-left: 20%;">
+                    <div class="eiei-co-th-123-aaa-bbb-thailand">
+                      Levelup.co.th
+                      <br />
+                      123 aaa bbb
+                      <br />
+                      Thailand
+                    </div>
+                    <div class="_99-1212-1212">+99 1212 1212</div>
+                  </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="container">
+                <div class="box-map" style="margin-left: 20%;">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--== send email ==-->
+    <div class="box-email">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message : </label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+    </div>
+    
+    <footer>
+        <%- include('partials/footer');%>
+    </footer>
+
+    <script>
+        function initMap() {
+            var chiangMaiUniversity = { lat: 18.7969, lng: 98.9525 };
+
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 16, 
+                center: chiangMaiUniversity,
+            });
+
+            var marker = new google.maps.Marker({
+                position: chiangMaiUniversity,
+                map: map,
+                title: "Chiang Mai University",
+            });
+        }
+        initMap();
+    </script>
+</body>
+</html>

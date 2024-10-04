@@ -1,0 +1,8 @@
+.scrollable-list{
+    height: 400px;
+    margin-top: 50px;
+}
+table {
+    width: 100%;
+    table-layout: auto;
+}

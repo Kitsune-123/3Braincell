@@ -1,0 +1,698 @@
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+}
+body {
+  padding-top: 120px; /* Adjust the value to match the height of your navbar */
+}
+.home-page {
+  background: #ffffff;
+  height: 4917px;
+  position: relative;
+  overflow: hidden;
+}
+#carouselExampleIndicators {
+  margin-top: 30px;
+}
+
+/* newArrivals */
+#newArrivals {
+  line-height: 1.5;
+  margin-top: 5%;
+  background-color: #fff;
+}
+.new-arrivals,.get-moving-get-grooving-get-shopping {
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+.new-arrivals {
+  color: #000000;
+  font-size: 70px;
+  height: 87px;
+  transition: font-size 0.3s ease, height 0.3s ease;
+}
+.get-moving-get-grooving-get-shopping {
+  color: #9d9d9d;
+  font-size: 20px;
+  height: 23px;
+  transition: font-size 0.3s ease, height 0.3s ease;
+}
+@media (max-width: 585px) {
+  .new-arrivals {
+    font-size: 50px;
+    height: 70px;
+  }
+  .get-moving-get-grooving-get-shopping {
+    font-size: 15px;
+    height: 20px;
+  }
+}
+
+/* navbar */
+.navbar {
+  width: auto;
+  height: 80px ;
+  background-color: #373539;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 999; 
+}
+.navbar-brand img {
+  display: block; 
+}
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .form-control {
+  margin-left: 3%;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.navbar a img {
+  margin-left: 12px; 
+}
+.search-icon,
+.bars {
+  display: none;
+}
+.fa-bars {
+  font-size: 36px; 
+  color: #141414;
+  margin-left: 15px;
+}
+
+@media (max-width: 585px) {
+  .form-control {
+    display: none; 
+  }
+  .madal {
+    display: none;
+  }
+  .search-icon {
+    display: block; 
+  }
+  .nav {
+    display: none;
+  }
+  .user_icon {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+}
+.kids-nav {
+  color: #373539;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.women-nav {
+  color: #373539;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.men-nav {
+  color: #373539;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.nav-header .nav {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  position: fixed; 
+  top: 80px; 
+  width: 100%; 
+  z-index: 998;
+}
+/*= 3 lone =*/
+.offcanvas-title {
+  text-align: center;
+  width: 100%;
+  margin-top: 2%;
+}
+.accordion-item {
+  border: none;
+}
+.nav a {
+  color: #000;
+}
+.accordion-button {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.bar-down-button .btn {
+  margin: 0 5% 10% 5%;
+  width: 180px;
+  border-radius: 20px;
+  background-color: #000;
+}
+
+/*best seller*/
+#bestSeller {
+  margin: 5% 5% 0 5%;
+}
+.best-seller {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  transition: font-size 0.3s ease;
+}
+@media (max-width: 585px) {
+  .best-seller {
+    font-size: 35px;
+  }
+}
+
+
+
+/* trending */
+#trendingID {
+  margin: 5% 5% 0 5%;
+}
+.trending {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  transition: font-size 0.3s ease;
+}
+@media (max-width: 585px) {
+  .trending {
+    font-size: 35px;
+  }
+}
+
+/* slide trending */
+#slide-trendingID {
+  margin: 2% 4% 0 5%;
+}
+.slide-trending {
+  height: 531px;
+  position: relative;
+  overflow-x: auto;
+}
+.image-2 {
+  width: 366px;
+  height: 470px;
+  position: absolute;
+  left: 454px;
+  top: 31px;
+  object-fit: cover;
+}
+
+.image-1 {
+  width: 361px;
+  height: 470px;
+  position: absolute;
+  left: 0px;
+  top: 31px;
+  object-fit: cover;
+}
+
+.image-4 {
+  width: 360px;
+  height: 470px;
+  position: absolute;
+  left: 925px;
+  top: 31px;
+  object-fit: cover;
+}
+
+.rectangle-5,.rectangle-52,.rectangle-53{
+  background: #c11b1b;
+  border-radius: 30px;
+  width: 118px;
+  height: 49px;
+  position: absolute;
+  text-decoration: none;
+}
+.rectangle-5 {
+  left: 24px;
+  top: 440px;
+  transform-origin: 0 0;
+  display: inline-block;
+}
+.shop,.shop2,.shop3 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 7px;
+  text-decoration: none;
+}
+.rectangle-52 {
+  left: 475px;
+  top: 440px;
+  transform-origin: 0 0;
+}
+.rectangle-53 {
+  left: 953px;
+  top: 440px;
+  transform-origin: 0 0;
+}
+.step-into-strength-women-s-exercise-shoes-for-every-journey,
+.join-the-movement-feel-look-perform-your-best-in-clothes-designed-to-move-with-you,
+.playtime-champions-deserve-epic-gear {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+}
+.step-into-strength-women-s-exercise-shoes-for-every-journey {
+  left: 24px;
+  top: 345px;
+  width: 237px;
+}
+.join-the-movement-feel-look-perform-your-best-in-clothes-designed-to-move-with-you {
+  left: 475px;
+  top: 345px;
+  width: 237px;
+  height: 70px;
+}
+.playtime-champions-deserve-epic-gear {
+  left: 953px;
+  top: 368px;
+  width: 237px;
+}
+
+
+/* promotion */
+#promotionID {
+  margin: 5% 5% 0 5%;
+}
+.promotion {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  transition: font-size 0.3s ease;
+}
+@media (max-width: 585px) {
+  .promotion {
+    font-size: 35px;
+  }
+}
+
+/*promotion photo*/
+#promotion-photoID {
+  margin: 2% 5% 0 5%;
+}
+.promotion-photo {
+  width: 100%;
+  height: auto;
+  position: relative;
+  object-fit: cover;
+}
+
+
+/* why shop with us */
+#why-shop-with-usID {
+  margin: 5% 5% 0 5%;
+}
+#why-shop-with-us-infoID::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.why-shop-with-us {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  transition: font-size 0.3s ease;
+}
+@media (max-width: 585px) {
+  .why-shop-with-us {
+    font-size: 35px;
+  }
+}
+
+/* why shop with us info */
+#why-shop-with-us-infoID {
+  margin: 4% 5% 2% 5%;
+}
+.frame-1 {
+  height: auto;
+  line-height: 40px;
+}
+#why-shop-with-us-infoID .container {
+  text-align: center;
+}
+#why-shop-with-us-infoID .container img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.diverse-product-range,
+.competitive-prices,
+.customer-centric-experience,
+.trusted-quality-and-brands {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.we-offer-varied-high-quality-sports-gear,
+.providing-affordability-with-competitive-pricing,
+.emphasizing-renowned-brands-and-durable-products,
+.prioritizing-user-satisfaction-with-responsive-service {
+  color: #525252;
+  text-align: center;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.image-8,
+.image-9,
+.image-10,
+.image-11 {
+  width: 142px;
+  height: 142px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 585px) {
+  .image-8,
+  .image-9,
+  .image-10,
+  .image-11 {
+    width: 100px; /* Adjust the width for smaller screens */
+    height: 100px; /* Adjust the height for smaller screens */
+  }
+
+  .diverse-product-range,
+  .competitive-prices,
+  .customer-centric-experience,
+  .trusted-quality-and-brands {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .we-offer-varied-high-quality-sports-gear,
+  .providing-affordability-with-competitive-pricing,
+  .emphasizing-renowned-brands-and-durable-products,
+  .prioritizing-user-satisfaction-with-responsive-service {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* footer category */
+#footer-categoryID {
+  margin: 5% 0 5% 5%;
+}
+
+.footer-category {
+  height: auto;
+  margin-left: 15%;
+  line-height: 40px;
+  transition: line-height 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+}
+.men,
+.women,
+.kids {
+  color: #373539;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+.all-men-s,
+.all-women-s,
+.all-kids,
+.shoes,
+.shoes2,
+.clothing,
+.shirt,
+.shirt2,
+.shoes3,
+.shorts,
+.shorts2,
+.accessory {
+  color: #373539;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+
+}
+@media only screen and (max-width: 575px) {
+  .footer-category {
+    line-height: 20px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .men,
+.women,
+.kids {
+  color: #373539;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.all-men-s,
+.all-women-s,
+.all-kids,
+.shoes,
+.shoes2,
+.clothing,
+.shirt,
+.shirt2,
+.shoes3,
+.shorts,
+.shorts2,
+.accessory {
+  color: #373539;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+}
+}
+
+/* footer */
+#footer {
+  background: #373539;
+  width: 100%;
+  height: auto;
+}
+.box-faqs {
+  margin: 10% 0 0 20%;
+  height: 100px;
+  line-height: 50px;
+}
+.box-get-help {
+  margin: 10% 0 0 5%;
+  height: 150px;
+  line-height: 50px;
+}
+@media only screen and (max-width: 992px) {
+  .box-get-help {
+    margin-left: 20%;
+  }
+}
+.box-about-us {
+  margin: 10% 0% 0 10%;
+  height: 251px;
+  line-height: 50px;
+}
+.box-img {
+  margin: 15% 0% 0 10%;
+  height: 80px;
+}
+.box-faqs,
+.box-about-us,
+.box-get-help,
+.box-img {
+  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 992px) {
+  .box-img {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .box-img {
+    margin-left: 20%;
+  }
+  .box-about-us {
+    margin-left: 20%;
+  }
+}
+.faqs,
+.promotions {
+  color: #e4d2b2;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.get-help,
+.return-refund,
+.how-to-track-the-order {
+  color: #e4d2b2;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+.get-help {
+  font-weight: 600;
+  padding-bottom: 5%;
+}
+.about-us,
+.email-gmail-com,
+.contact-us,
+.tel-1111-222-333 {
+  color: #e4d2b2;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+.about-us a,
+.get-help a{
+  font-weight: 600;
+  padding-bottom: 5%;
+  color: #e4d2b2;
+  text-decoration: underline;
+}
+.instagram,
+.facebook,
+.twitter {
+  width: 39px;
+  height: 39px;
+  object-fit: cover;
+  margin-right: 10%;
+}
+.level-up-sport-inc-all-right-reserved {
+  color: #e4d2b2;
+  text-align: left;
+  font-family: "Inter-ExtraLight", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 1%;
+  margin-bottom: 3%;
+}
+@media only screen and (max-width: 992px) {
+  .level-up-sport-inc-all-right-reserved {
+    padding-top: 0;
+  }
+}
+
+/* sign in */
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 500px;
+    
+    .modal-content {
+      padding: 1rem;
+    }
+  }
+}
+@media (max-width: 585px) {
+  .modal-backdrop {
+      display: none !important;
+  }
+  .modal {
+      display: none !important;
+  }
+}
+
+.form-group .form-control {
+  width: 100%;
+  max-width: 500px;
+}
+.modal-header {
+  .close {
+    margin-top: -1.5rem;
+  }
+}
+.form-title {
+  margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+  border-radius: 3rem;
+}
+
+.form-group {
+  margin-bottom: 4%;
+}
+
+.register-link {
+  color: #782700 !important;
+}
+
+/* login button */
+.btn-black {
+  background-color: black;
+  border-color: black;
+  color: white; /* Text color */
+}
+
+.btn-black:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+.btn-black:focus {
+  background-color: #333;
+  border-color: #333;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-black:active {
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-black:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-black:not(:disabled):not(.disabled):active:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-black:focus:not(:active) {
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+.btn-login {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  height: 50px;
+}

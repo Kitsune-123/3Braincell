@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/glider.css">
+</head>
+<body>
+    <% const lastTenProducts = products.slice(-10); %>
+    <% lastTenProducts.forEach(product => { %>
+        <div class="product-box shadow-sm p-3 mb-5 bg-body rounded">
+            <!-- promotion -->
+            <% if (product.discount > 0) { %>
+                <span class="p-discount">-<%= product.discount %>%</span>
+            <% } %>
+            <!-- image -->
+            <div class="p-img-container">
+                <div class="p-img">
+                    <a href="../productPages?productId=<%= product.product_id %>">
+                        <img src="<%= product.image %>" class="p-img-front" >
+                        <img src="<%= product.image %>" class="p-img-back" >
+                    </a>
+                </div>
+            </div>
+            <!-- text -->
+            <div class="p-box-text">
+                <!-- category -->
+                <div class="product-category">
+                    <p>
+                        <%= product.product_name %>
+                </div>
+                <!-- title -->
+                <div class="product-title">
+                    <p>
+                        <%= product.description %>
+                    </p>
+                </div>
+                <!--  price -->
+                <div class="price-buy">
+                    <span class="<%= product.discount > 0 ? 'p-price-discount' : 'p-price' %>">
+                        $<%= product.price %>
+                    </span>
+                </div>                
+            </div>
+        </div>
+        <% }); %>
+</body>
+</html>

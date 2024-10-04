@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <% products.forEach(product => { %>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+        <section class="panel box-products">
+            <div class="pro-img-box">
+                <% if (product.discount > 0) { %>
+                    <span class="p-discount">-<%= product.discount %> %</span>
+                <% } %>
+                
+                <a href="../productPages?productId=<%= product.product_id %>">
+                    <img src="<%= product.image %>" class="p-img-front"/>
+                </a>
+                
+            </div>
+            <div class="panel-body">
+                <h4>
+                    <a href="#" class="pro-title">
+                        <%= product.product_name %>
+                    </a>
+                </h4>
+                <p class="description"><%= product.description %></p>
+                <p class="<%= product.discount > 0 ? 'price-discount' : 'price' %>">
+                    $<%= product.discount > 0 ? Math.floor(product.price - (product.price * (product.discount / 100))) : product.price %>
+                </p>                               
+            </div>
+        </section>
+    </div>
+    <% }); %>
+    
+</body>
+</html>

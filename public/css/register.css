@@ -1,0 +1,319 @@
+.register-box,
+.register-box * {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container-fluid {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.register-box {
+    flex-direction: column;
+    border-radius: 15px;
+    height: 1050px;
+    width: 987px;
+    display: flex;
+    /* align-items: center; */
+    position: relative;
+    margin: 5% 0 5% 0;
+}
+.header-container {
+    top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%; /* Ensure the container takes up the full width */
+}
+
+.header-content {
+    flex-grow: 1; /* Allow the content to take up remaining space */
+}
+.register-box h2 {
+    color: #000000;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 800;
+    text-decoration: underline;
+    margin: 0; /* Add this to remove default margin */
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem; /* Adjust font size as needed */
+    visibility: hidden; /* Initially hidden */
+}
+/* .register-box h2 {
+    color: #000000;
+    align-items: center;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 800;
+    text-decoration: underline;
+    position: absolute;
+    top: 43px;
+} */
+
+label {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#explain-1 {
+    text-align: start;
+    font-style: italic;
+    position: absolute;
+    left: 135px;
+    font-weight: 200;
+    font-size: 14px;
+    top: 650px;
+}
+
+.firstname,
+.lastname,
+.email,
+.passwords,
+.cfpass,
+.check,
+.submit {
+    text-align: start;
+    font-weight: 400;
+    position: absolute;
+    left: 135px;
+}
+
+.firstname {
+    top: 140px;
+}
+
+.lastname {
+    top: 280px;
+}
+
+.email {
+    top: 420px;
+}
+
+.passwords {
+    top: 560px;
+}
+
+.cfpass {
+    top: 720px;
+}
+
+.check {
+    top: 820px;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.submit {
+    top: 990px;
+    font-size: 34px;
+
+}
+
+.firstname input[type=text],
+.lastname input[type=text],
+.email input[type=text]{
+    background: #eeeeee;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.passwords input[type=password],
+.cfpass input[type=password] {
+    background: #eeeeee;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.submit input[type=submit] {
+    background: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    font-weight: 800;
+    bottom: 43px;
+}
+.header-container button[type=button]{
+    visibility: hidden;
+}
+
+span {
+    color: #c11b1b;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.condition {
+    text-underline-position: below;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* desktop */
+@media (min-width: 992px)  {
+    .register-box {
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+        background: #ffffff;
+    }
+    input[type=text]{
+        width: 715px;
+        height: 50px;
+    }
+    .passwords input[type=password]{
+        width: 715px;
+        height: 50px;
+    }
+    .cfpass input[type=password]{
+        width: 715px;
+        height: 50px;
+    }
+    input[type=submit]{
+        width: 715px;
+        height: 70px;
+    }
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* mobile-view */
+@media (max-width: 576px) {
+    .container-fluid {
+        text-align: center;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        height: fit-content;
+    }
+    .register-box {
+        align-items: center;
+        align-content: flex-start;
+    }
+
+    .header-content {
+        /* flex-direction: column; */
+        text-align: center; /* Center the content in mobile view */
+        width: 100%; /* Ensure the container takes up the full width */
+    }
+    .container h2{
+        text-align: center;
+        font-size: 24px;
+    }
+    .btn-close {
+        visibility: visible;
+        margin-right: 30px; /* Add margin to the right */
+    }
+
+
+
+    .firstname,
+    .lastname,
+    .email,
+    .passwords,
+    .cfpass,
+    .check,
+    .submit {
+        justify-content: flex-start;
+        align-items: start;
+        left: 30px; /* Adjusted left property */
+    }
+
+    .register-box {
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+
+    .container h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .firstname {
+        top: 140px;
+    }
+
+    .lastname {
+        top: 200px;
+    }
+
+    .email {
+        top: 260px;
+    }
+
+    .passwords {
+        top: 320px;
+    }
+
+    .cfpass {
+        top: 400px;
+    }
+
+    .check {
+        top: 460px;
+        font-size: 24px;
+        font-weight: 200;
+    }
+
+    .submit {
+        top: 700px;
+        font-size: 34px;
+        width: 300px;
+    }
+
+    #explain-1 {
+        top: 380px;
+        font-size: 8px;
+        left: 30px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    .condition {
+        font-size: 12px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input[type=text] {
+        width: 345px;
+        height: auto;
+    }
+
+     input[type=password] {
+        width: 345px;
+        height: auto;
+    }
+
+    input[type=submit] {
+        border-radius: 10px;
+        width: 345px;
+        height: auto;
+        align-items: center;
+    }
+    .header-container button[type=button]{
+        visibility: visible;
+    }
+}

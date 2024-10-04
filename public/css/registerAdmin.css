@@ -1,0 +1,138 @@
+.INP,
+.box-above-bg,
+.logo,
+.Name,
+.Regisbtn
+.INP *{
+    box-sizing: border-box;
+}
+
+.INP{
+    background: #eeeeee;
+    margin: 2% 0 2% 0;
+    border-radius: 5px;
+    height: 55px;
+    position: relative;
+    border: 1px solid #ccc;
+    width: 850px;
+}
+
+.check-field{
+    display: flex;/* use flex box to aligin items horizontally*/
+    align-items: center;/*center the item vertically*/
+}
+
+.check-boxes{
+    margin-right: 5px;
+}
+
+body{
+    background-color: #1E1E1E;
+}
+
+.box-above-bg{
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: max-content;
+    width:987px;
+    position: relative;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    margin-top: 49px;
+    margin-left:250px;
+    margin-right: 180px;
+    margin-bottom: 110px;
+   
+}
+
+.logo{
+  height: 129px;
+  position: relative;
+  object-fit: cover;
+}
+
+.center-img{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+
+.Container{
+  display: flex;
+  justify-content: center; /* Distribute space between items */
+  align-items: center; /* Center items vertically */
+}
+
+.Login-text a {
+    color: #9d9d9d;
+  cursor: pointer;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 20px;
+ 
+}
+
+.Login-text a:hover{
+    color: #373539;
+}
+
+.Regis a{
+ color: #373539;
+  cursor: pointer;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: underline;
+  padding: 20px;
+  
+}
+
+.Regis a:hover{
+    color:#9d9d9d;
+}
+
+.box-in-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%; /* Ensure container takes full width */
+}
+
+.Name{
+    font-family: "Inter-MediumItalic", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: true;
+    color:  #c11b1b;
+}
+
+.icolor{
+    color: #000000;
+}
+
+.checkloc{
+    margin-left: 67px;
+    margin-top: 20px;
+}
+
+#Regisbtn{
+    background: #000000;
+    margin-bottom: 3%;
+    border-radius: 15px;
+    height: 72px;
+    width: 711px;
+    position: relative;
+    color: #ffffff; /* Set text color to white */
+    margin-left: 120px;
+    margin-top: 30px;
+    font-family: "Inter-ExtraBold", sans-serif;
+    font-size: 36px;
+}
+
+#Regisbtn:active {
+    background: #9d9d9d;
+}

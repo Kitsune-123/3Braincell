@@ -1,0 +1,31 @@
+version: '3.8'
+ 
+networks:
+  sportstore:
+    driver: bridge
+ 
+services:
+  frontend:
+    container_name: sportstore-frontend
+    image: yorunii/3brain_cell_prod:latest
+    networks:
+      - sportstore
+    ports:
+      - "80:8900"
+    environment:
+      - DB_NAME=${DB_NAME}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=${DB_HOST}
+  db:
+    container_name: sportstore-db
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    networks:
+      - sportstore
+    environment:
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - ./mysql:/var/lib/mysql

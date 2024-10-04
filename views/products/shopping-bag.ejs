@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/basket.css">
+</head>
+<body>
+    <% products.forEach(product => { %>
+        <div class="item">
+            <div class="buttons">
+                <img src="/img/icon/x.png" alt="" width="18" height="18" style="opacity: 0.5;">
+            </div>
+    
+            <div class="image">
+                <img src="<%= product.image %>" alt="<%= product.name %>" width="80px" height="80px"/>
+            </div>
+    
+            <div class="description">
+                <span><%= product.product_name %></span>
+                <span><%= product.description %></span>
+            </div>
+    
+            <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                    <img src="/img/icon/plus.png" alt="" width="14px" height="14px"/>
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                    <img src="/img/icon/minus.png" alt="" width="17px" height="17px"/>
+                </button>
+            </div>
+            
+            <div class="total-price">$<%= product.price %></div>
+        </div>
+    <% }); %>   
+    <script>
+    </script> 
+</body>
+</html>
